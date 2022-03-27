@@ -18,5 +18,25 @@
     "password": "mac.smith",
     "phone": "+91715899642",
     "userStatus": 0
+  },
+  {
+    "id": 1004,
+    "username": "sorwilliam",
+    "firstName": "Sor",
+    "lastName": "William",
+    "email": "willsor@yahoo.com",
+    "password": "zorwill",
+    "phone": "+91715812942",
+    "userStatus": 0
+  },
+  {
+    "id": 1084,
+    "username": "Tucker78788",
+    "firstName": "Shane",
+    "lastName": "Tucker",
+    "email": "tucshane@yahoo.com",
+    "password": "tuktuk@shane",
+    "phone": "+91715814587",
+    "userStatus": 0
   }
 ]
