@@ -6,7 +6,7 @@
         - uses: actions/checkout@v2
         - uses:  actions/setup-java@v3.0.0
           with:
-            java-vserison: '11'
+            java-verison: '11'
             distribution: 'adopt'
             cache: maven
         - run:  mvn --batch-mode --update-snapshots verify
