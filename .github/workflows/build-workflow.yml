@@ -8,6 +8,6 @@
           uses:  actions/setup-java@v2
           with:
             distribution: 'adopt'
-            java-verison: '11'
+            java-version: '11'
             cache: maven
         - run:  mvn --batch-mode --update-snapshots verify
