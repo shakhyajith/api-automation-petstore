@@ -1,5 +1,6 @@
 package e2e;
 
+import base.TestBase;
 import controllers.UserController;
 import models.user.UserCreateResponse;
 import models.user.UserData;
@@ -14,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
-public class TestUser {
+public class TestUser extends TestBase {
 
     private final Map<String, String> headers = new HashMap<>();
     private UserController userController;
