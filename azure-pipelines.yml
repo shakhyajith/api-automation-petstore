@@ -1,10 +1,10 @@
 trigger:
  - main
  
-schedules:
-  - cron: 30 22 * * *
-    displayName: test schedule
-    always: false
-    branches:
-      include:
-        - main
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+  - job: build
+    steps:
+      - script: echo Hello world
