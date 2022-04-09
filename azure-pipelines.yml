@@ -2,7 +2,7 @@ trigger:
  - main
  
 schedules:
-  - cron: 10 22 * * *
+  - cron: 30 22 * * *
     displayName: test schedule
     always: false
     branches:
