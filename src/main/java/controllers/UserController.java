@@ -15,12 +15,13 @@ import java.util.concurrent.ExecutionException;
 public class UserController {
     public static final String BASE_URL = PropertyReader.getProperty("base.url");
 
-public ResponseData<UserCreateResponse> createWithArray(UserData[] userData, Map<String, String> headers) throws UnsupportedEncodingException, ExecutionException, InterruptedException {
-    String url = BASE_URL + "/user/"+"createWithArray";
-    ResponseContent responseContent = RequestHandler.httpPOST(url, userData, headers);
-    UserCreateResponse response = JsonParser.parseToObject(UserCreateResponse.class, responseContent.getContent());
-    return new ResponseData<>(responseContent.getStatusCode(), response);
-}
+    public ResponseData<UserCreateResponse> createWithArray(UserData[] userData, Map<String, String> headers) throws UnsupportedEncodingException, ExecutionException, InterruptedException {
+        String url = BASE_URL + "/user/" + "createWithArray";
+        ResponseContent responseContent = RequestHandler.httpPOST(url, userData, headers);
+        UserCreateResponse response = JsonParser.parseToObject(UserCreateResponse.class, responseContent.getContent());
+        return new ResponseData<>(responseContent.getStatusCode(), response);
+    }
+
     public ResponseData<UserData> getUsers(String username, Map<String, String> headers) throws ExecutionException, InterruptedException {
         String url = BASE_URL + "/user/" + username;
         ResponseContent responseContent = RequestHandler.httpGET(url, headers);

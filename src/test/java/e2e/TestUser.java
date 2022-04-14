@@ -25,9 +25,9 @@ public class TestUser extends TestBase {
     @BeforeClass
     public void setUp() {
         userController = new UserController();
-        userData = JsonParser.getJsonObjectFromFile(UserData[].class, "id", 1002);
-        userDataArr[0] = JsonParser.getJsonObjectFromFile(UserData[].class, "id", 1084);
-        userDataArr[1] = JsonParser.getJsonObjectFromFile(UserData[].class, "id", 1003);
+        userData = JsonParser.getJsonObjectFromFile(UserData.class, 1002);
+        userDataArr[0] = JsonParser.getJsonObjectFromFile(UserData.class, 1084);
+        userDataArr[1] = JsonParser.getJsonObjectFromFile(UserData.class,  1003);
         headers.put("content-type", "application/json");
     }
 
