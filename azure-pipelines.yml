@@ -1,0 +1,10 @@
+trigger:
+ - main
+ 
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+  - job: build
+    steps:
+      - script: echo Hello world
